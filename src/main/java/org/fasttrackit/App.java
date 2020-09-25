@@ -18,13 +18,15 @@ public class App
 
         PersonRepository personRepository = new PersonRepository();
 
-        CreatePersonRequest request = new CreatePersonRequest();
-        request.setFirstName("Test");
-        request.setLastName("Application");
-        request.setPhoneNumber(1751234567);
-        request.setDateAdded(LocalDate.now());
+//        CreatePersonRequest request = new CreatePersonRequest();
+//        request.setFirstName("Test");
+//        request.setLastName("Application");
+//        request.setPhoneNumber(1751234567);
+//        request.setDateAdded(LocalDate.now());
+//
+//        personRepository.createPerson(request);
 
-        personRepository.createPerson(request);
+        personRepository.deletePerson(3);
     }
 
 }

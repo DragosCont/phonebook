@@ -23,4 +23,15 @@ public class PersonRepository {
         }
 
     }
+
+    public void deletePerson (long id) throws SQLException {
+
+        String sql = "DELETE FROM person WHERE id = ?";
+
+        try (PreparedStatement preparedStatement = DatabaseConfiguration.getConnection().prepareStatement(sql)) {
+            preparedStatement.setLong(1, id);
+
+            preparedStatement.executeUpdate();
+        }
+    }
 }

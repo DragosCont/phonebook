@@ -3,12 +3,12 @@ package org.fasttrackit.transfer;
 
 import java.time.LocalDate;
 
-public class CreatePersonRequest {
+public class UpdatePersonRequest {
 
     private String firstName;
     private String lastName;
     private int phoneNumber;
-    private LocalDate dateAdded;
+    private LocalDate dateUpdated;
 
     public String getFirstName() {
         return firstName;
@@ -34,22 +34,21 @@ public class CreatePersonRequest {
         this.phoneNumber = phoneNumber;
     }
 
-    public LocalDate getDateAdded() {
-        return dateAdded;
+    public LocalDate getDateUpdated() {
+        return dateUpdated;
     }
 
-    public void setDateAdded(LocalDate dateAdded) {
-        this.dateAdded = dateAdded;
+    public void setDateUpdated(LocalDate dateUpdated) {
+        this.dateUpdated = dateUpdated;
     }
-
 
     @Override
     public String toString() {
-        return "CreatePersonRequest{" +
+        return "UpdatePersonRequest{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", phoneNumber=" + phoneNumber +
-                ", dateAdded=" + dateAdded +
+                ", dateUpdated=" + dateUpdated +
                 '}';
     }
 }

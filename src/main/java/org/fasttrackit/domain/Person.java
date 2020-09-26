@@ -9,6 +9,7 @@ public class Person {
     private String lastName;
     private int phoneNumber;
     private LocalDate dateAdded;
+    private LocalDate dateUpdated;
 
     public long getId() {
         return id;
@@ -50,6 +51,14 @@ public class Person {
         this.dateAdded = dateAdded;
     }
 
+    public LocalDate getDateUpdated() {
+        return dateUpdated;
+    }
+
+    public void setDateUpdated(LocalDate dateUpdated) {
+        this.dateUpdated = dateUpdated;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -58,6 +67,7 @@ public class Person {
                 ", lastName='" + lastName + '\'' +
                 ", phoneNumber=" + phoneNumber +
                 ", dateAdded=" + dateAdded +
+                ", dateUpdated=" + dateUpdated +
                 '}';
     }
 }
